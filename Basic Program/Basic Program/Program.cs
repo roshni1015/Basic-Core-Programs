@@ -1,11 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Basic_Core_Programming;
+using Basic_Program;
 
 Console.WriteLine("Basic Core Pogram!");
 while (true)
 {
 
-    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber");
+    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber\n2)QuotientRemainder");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -13,6 +13,10 @@ while (true)
           swapingnumber swap = new swapingnumber();
           swap.swap();
           break;
+        case 2:
+            QuotientRemainder quotientRemainder = new QuotientRemainder();
+            quotientRemainder.quotientRemainder();
+            break;
         default:
           break;
 
