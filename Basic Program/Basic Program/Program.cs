@@ -5,7 +5,7 @@ Console.WriteLine("Basic Core Pogram!");
 while (true)
 {
 
-    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber\n2)QuotientRemainder\n3)Largestnumber\n4)VowelConsonant");
+    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber\n2)QuotientRemainder\n3)Largestnumber\n4)VowelConsonant\n5)Evenodd");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -24,6 +24,10 @@ while (true)
         case 4:
             VowelConsonant vowelConsonant = new VowelConsonant();
             vowelConsonant.vowelConsonant();
+            break;
+        case 5:
+            Evenodd evenodd = new Evenodd();
+            evenodd.evenodd();
             break;
         default:
           break;
