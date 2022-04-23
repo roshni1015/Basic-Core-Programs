@@ -5,7 +5,7 @@ Console.WriteLine("Basic Core Pogram!");
 while (true)
 {
 
-    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber\n2)QuotientRemainder\n3)Largestnumber");
+    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber\n2)QuotientRemainder\n3)Largestnumber\n4)VowelConsonant");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -20,6 +20,10 @@ while (true)
         case 3:
             Largestnumber large = new Largestnumber();
             large.largenumber();
+            break;
+        case 4:
+            VowelConsonant vowelConsonant = new VowelConsonant();
+            vowelConsonant.vowelConsonant();
             break;
         default:
           break;
