@@ -5,7 +5,7 @@ Console.WriteLine("Basic Core Pogram!");
 while (true)
 {
 
-    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber\n2)QuotientRemainder\n3)Largestnumber\n4)VowelConsonant\n5)Evenodd\n6)Flipcoin\n7)Leapyear");
+    Console.WriteLine("Choose the Program to be executed :\n1)Swapingnumber\n2)QuotientRemainder\n3)Largestnumber\n4)VowelConsonant\n5)Evenodd\n6)Flipcoin\n7)Leapyear\n8)Powerof2");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -36,6 +36,10 @@ while (true)
         case 7:
             Leapyear leap = new Leapyear();
             leap.leap();
+            break;
+        case 8:
+            Powerof2 power = new Powerof2();
+            power.powerof2();
             break;
         default:
           break;
