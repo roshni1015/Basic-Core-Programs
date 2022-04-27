@@ -10,30 +10,26 @@ namespace Basic_Program
     {
         public void vowelConsonant()
         {
-            char ch;
-            Console.WriteLine("Enter any Alphabet :");
-            ch = Convert.ToChar(Console.ReadLine());
-            switch (ch)
-            {
+           Console.WriteLine("Vowel or Consonent!");
 
-                case 'a':
-                    Console.WriteLine("Alphabet is vowel");
-                    break;
-                case 'e':
-                    Console.WriteLine("Alphabet is vowel");
-                    break;
-                case 'i':
-                    Console.WriteLine("Alphabet is vowel");
-                    break;
-                case 'o':
-                    Console.WriteLine("Alphabet is vowel");
-                    break;
-                case 'u':
-                    Console.WriteLine("Alphabet is vowel");
-                    break;
-                default:
-                    Console.WriteLine("Alphabet is consonant");
-                    break;
+            Console.WriteLine("Please Enter an Alphabet (A-Z or a-z) x : ");
+            char x = Convert.ToChar(Console.ReadLine());
+
+
+
+            if (x == 'A' || x == 'a')
+                Console.WriteLine("Entered Alphabet is Vowel");
+            else if (x == 'E' || x == 'e')
+                Console.WriteLine("Entered Alphabet is Vowel");
+            else if (x == 'I' || x == 'i')
+                Console.WriteLine("Entered Alphabet is Vowel");
+            else if (x == 'I' || x == 'i')
+                Console.WriteLine("Entered Alphabet is Vowel");
+            else if (x == 'U' || x == 'u')
+                Console.WriteLine("Entered Alphabet is Vowel");
+            else
+                Console.WriteLine("Entered Alphabet is a Consonent");
+
             }
         }
     }
